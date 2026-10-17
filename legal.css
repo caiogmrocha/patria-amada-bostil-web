@@ -1,0 +1,64 @@
+/* Páginas legais do Pátria Amada Bostil: estáticas, sem scripts, sem fontes
+   externas e sem rastreadores. Cores do jogo (verde-escuro e amarelo). */
+:root {
+	--bg: #0d1f14;
+	--panel: #13291b;
+	--border: #2f5a3d;
+	--text: #e8efe9;
+	--muted: #a9bdb0;
+	--accent: #f6c431;
+	--link: #ffd95c;
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font: 16px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+header a.logo { display: flex; align-items: center; gap: 12px; color: var(--text); text-decoration: none; font-weight: 800; }
+header .mark {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 10px;
+	background: var(--accent);
+	color: var(--bg);
+	font-weight: 900;
+	letter-spacing: -0.5px;
+}
+h1 { color: var(--accent); font-size: 1.9rem; line-height: 1.2; margin: 18px 0 6px; }
+.updated { color: var(--muted); font-size: 0.92rem; margin: 0 0 24px; }
+h2 {
+	font-size: 1.15rem;
+	margin: 30px 0 8px;
+	text-decoration: underline;
+	text-decoration-color: var(--accent);
+	text-underline-offset: 5px;
+}
+p, li { color: var(--text); }
+ul { padding-left: 1.25rem; }
+li { margin: 4px 0; }
+a { color: var(--link); }
+strong { color: #fff; }
+.note {
+	background: var(--panel);
+	border: 1px solid var(--border);
+	border-radius: 10px;
+	padding: 12px 16px;
+	margin: 16px 0;
+}
+.basis { color: var(--muted); font-size: 0.92rem; }
+footer {
+	border-top: 1px solid var(--border);
+	margin-top: 40px;
+	padding-top: 16px;
+	color: var(--muted);
+	font-size: 0.92rem;
+}
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 18px; margin-bottom: 8px; }
